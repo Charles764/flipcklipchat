@@ -32,7 +32,7 @@
             chatbox.innerHTML += `<div class="user">${userMessage}</div>`;
             input.value = "";
 
-            let response = await fetch("https://charles764.github.io/flipcklipchat/", {
+            let response = await fetch("https://flipcklipchat.onrender.com", {  // <-- Updated URL
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message: userMessage })
